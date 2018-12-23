@@ -1,0 +1,40 @@
+{
+    "model" : {
+        "min_input_size":       320,
+        "max_input_size":       512,
+        "anchors":              [31,26, 51,44, 62,156, 81,60, 121,100, 127,260, 204,54, 248,145, 283,274],
+        "labels":               ["helicopter", "airbase", "warship", "plane", "oiltank"]
+    },
+
+    "train": {
+        "train_image_folder":   "./YOLOdatasets/trainingsets/image/",
+        "train_annot_folder":   "./YOLOdatasets/trainingsets/xml/",
+        "cache_name":           "yolo3_train.pkl",
+
+        "train_times":          1,
+        "batch_size":           1,
+        "learning_rate":        1e-3,
+        "nb_epochs":            200,
+        "warmup_epochs":        3,
+        "ignore_thresh":        0.5,
+        "gpus":                 "0",
+
+        "grid_scales":          [1,1,1],
+        "obj_scale":            5,
+        "noobj_scale":          1,
+        "xywh_scale":           1,
+        "class_scale":          1,
+
+        "tensorboard_dir":      "./logs",
+        "saved_weights_name":   "YOLO3_75.h5",
+        "debug":                true
+    },
+
+    "valid": {
+        "valid_image_folder":   "./YOLOdatasets/testingsets/image/",
+        "valid_annot_folder":   "./YOLOdatasets/testingsets/xml/",
+        "cache_name":           "yolo3_valid.pkl",
+
+        "valid_times":          1
+    }
+}
