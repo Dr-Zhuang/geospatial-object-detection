@@ -31,8 +31,8 @@
     },
 
     "valid": {
-        "valid_image_folder":   "./YOLOdatasets/testingsets/image/",
-        "valid_annot_folder":   "./YOLOdatasets/testingsets/xml/",
+        "valid_image_folder":   "./YOLOdatasets/validationsets/image/",
+        "valid_annot_folder":   "./YOLOdatasets/validationsets/xml/",
         "cache_name":           "yolo3_valid.pkl",
 
         "valid_times":          1
