@@ -7,9 +7,9 @@
     },
 
     "train": {
-        "train_image_folder":   "./YOLOdatasets/trainingsets/image/",
-        "train_annot_folder":   "./YOLOdatasets/trainingsets/xml/",
-        "cache_name":           "yolo3_train.pkl",
+        "train_image_folder":   "./datasets/trainingsets/image/",
+        "train_annot_folder":   "./datasets/trainingsets/xml/",
+        "cache_name":           "rsd_train.pkl",
 
         "train_times":          1,
         "batch_size":           1,
@@ -26,14 +26,14 @@
         "class_scale":          1,
 
         "tensorboard_dir":      "./logs",
-        "saved_weights_name":   "YOLO3_75.h5",
+        "saved_weights_name":   "rsd.h5",
         "debug":                true
     },
 
     "valid": {
-        "valid_image_folder":   "./YOLOdatasets/validationsets/image/",
-        "valid_annot_folder":   "./YOLOdatasets/validationsets/xml/",
-        "cache_name":           "yolo3_valid.pkl",
+        "valid_image_folder":   "./datasets/validationsets/image/",
+        "valid_annot_folder":   "./datasets/validationsets/xml/",
+        "cache_name":           "rsd_valid.pkl",
 
         "valid_times":          1
     }
