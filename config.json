@@ -3,7 +3,7 @@
         "min_input_size":       320,
         "max_input_size":       512,
         "anchors":              [31,26, 51,44, 62,156, 81,60, 121,100, 127,260, 204,54, 248,145, 283,274],
-        "labels":               ["helicopter", "airbase", "warship", "plane", "oiltank"]
+        "labels":               ["helicopter", "airport", "warship", "plane", "oiltank"]
     },
 
     "train": {
